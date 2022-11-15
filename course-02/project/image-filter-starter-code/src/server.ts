@@ -1,4 +1,4 @@
-import express from 'express';
+import express, {Request, Response }  from 'express';
 import bodyParser from 'body-parser';
 import {filterImageFromURL, deleteLocalFiles} from './util/util';
 
@@ -14,7 +14,16 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
   app.use(bodyParser.json());
 
   // @TODO1 IMPLEMENT A RESTFUL ENDPOINT
+  app.get("/",(req:Request,res:Response) =>{
+    res.status(200).send("Welcome to my image filtering site");
+  })
   // GET /filteredimage?image_url={{URL}}
+  app.get("/filteredimage",(req: Request, res: Response) => {
+      const {image_url} = req.query;
+      if (!image_url) {
+        return res.status(200).send(URL);
+      }
+    })
   // endpoint to filter an image from a public url.
   // IT SHOULD
   //    1

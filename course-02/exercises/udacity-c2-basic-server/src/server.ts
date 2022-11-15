@@ -1,4 +1,4 @@
-import express, { Router, Request, Response } from 'express';
+import express, { Request, Response } from 'express';
 import { create } from 'tailwind-rn';
 // import bodyParser from 'body-parser'; deprecated
 const bodyParser = require('body-parser')

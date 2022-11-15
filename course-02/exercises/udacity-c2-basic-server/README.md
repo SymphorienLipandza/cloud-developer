@@ -31,7 +31,7 @@ npm run dev
 Developer mode runs off the TypeScript source. Any saves will reset the server and run the latest version of the codebase. 
 
 ***
-## Important Files and Project Structure Another important thing
+## Important Files and Project Structure 
 
 The source code for this demo resides in the ./src directory.
 
